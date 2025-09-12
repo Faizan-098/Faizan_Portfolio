@@ -1,0 +1,140 @@
+.footerSection{
+  width: 100%;
+  background-color: #141414;
+  margin: auto;
+color: #c7c7c7;
+margin-top: 30px;
+}
+.footerSection h2{
+  color: #FFF;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+.footerSection h2::after{
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  background-color: #FFBB00;
+  left: 0;
+  bottom: -3px;
+}
+.topFooter{
+  max-width: 1300px;
+  width: 95%;
+  margin: auto;
+  min-height: 70px;
+  border-bottom: 1px solid #ffbb0070;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+
+ padding-block: 20px;
+ padding-inline: 10px;
+}
+.location, .contact, .email{
+  display: flex;
+  gap: 10px;
+  color: #FFFFFF;
+  align-items: center;
+  font-size: 20px;
+}
+.topFooter .icon{
+  color: #FFBB00;
+  width: 35px;
+  height: 35px;
+}
+
+
+.footerMiddle{
+  max-width: 1300px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-block: 20px;
+  padding-inline: 10px;
+}
+.info ,.quickLinks , .followUs {
+  width: 350px;
+} 
+.info{
+  text-align: justify;
+}
+
+.quickLinks ul {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.quickLinks .list {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #FFf;
+  transition: color .3s ease ;
+}
+.quickLinks .list:hover{
+  color: #FFBB00;
+}
+.footerBottom{
+  background-color: #1F1F1F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+  color: #c7c7c7;
+}
+.socialLinks{
+ display: flex;
+ gap: 15px;
+}
+.socialLinks .facebook , .twitter , .linkedin , .github{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+    color: #FFF;
+    transition: transform .2s ease;
+    cursor: pointer;
+
+}
+.socialLinks .facebook:hover, .twitter:hover , .github:hover , .linkedin:hover{
+  transform: scale(1.1);
+}
+ .socialLinks .facebook{
+  background-color: #3B5998;
+}
+.socialLinks .twitter{
+  background-color: #55ACEE;
+}
+.socialLinks .linkedin{
+  background-color: #0E76A8;
+
+}
+.socialLinks .github{
+  color: #141414;
+}
+
+@media (max-width:750px) {
+  .footerBottom{
+    font-size: 14px;
+  }
+  .topFooter .icon{
+    width: 25px;
+    height: 25px;
+  }
+  .location, .contact, .email{
+    font-size: 16px;
+  }
+}

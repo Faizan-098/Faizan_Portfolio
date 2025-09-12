@@ -1,0 +1,91 @@
+.projectSection{
+  min-height: 100vh;
+  padding-top: 130px;
+  max-width: 1300px;
+  width: 95%;
+  margin: auto;
+}
+.projectSection h2{
+  font-size: 50px;
+  font-weight: 400;
+ position: relative;
+  color: #FFF;
+ display: inline-block;
+ margin-bottom: 20px;
+}
+.projectSection h2::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 90%;
+  height: 1px;
+  background-color: #FFBB00;
+  bottom: -2px;
+ border-radius: 10px;
+}
+.projectSection p{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+position: relative;
+
+}
+
+.cardContainer{
+ width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cardContainer h2{
+  font-size: 25px;
+ position: static;
+ margin-bottom: 5px;
+}
+
+.projectSection blockquote{
+   width: 100%;  /* margin: auto; */
+  border-radius: 10px;
+  background-color: #282828;
+  padding: 50px;
+  position: relative;
+}
+.projectSection blockquote p{
+    font-style: italic;
+    word-spacing: 1px;
+    font-size: 20px;
+}
+.projectSection blockquote::after{
+  content: '🙶';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.projectSection blockquote::before{
+  content: '🙸';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.projectSection blockquote::after , .projectSection blockquote::before{
+  font-size: 80px;
+  color: #ffbb00d0;
+}
+@media (max-width:750px) {
+  .projectSection h2{
+    font-size: 33px;
+  }
+  .projectSection blockquote{
+        padding: 40px;
+  }
+  .projectSection blockquote p{
+    font-size: 16px;
+  }
+  .projectSection blockquote::after , .projectSection blockquote::before{
+     font-size: 60px;
+  }
+}

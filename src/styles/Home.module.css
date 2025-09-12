@@ -1,0 +1,239 @@
+.homeSection{
+  max-width: 1300px;
+  width: 95%;
+  margin: auto;
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-inline: 10px;
+}
+.leftContent{
+display: flex;
+flex-direction: column;
+color: #FFF;
+width: 400px;
+flex-grow: 1;
+}
+.greeting{
+  font-size: 30px;
+  
+}
+.name{
+  font-size: 50px;
+  background: linear-gradient(to top, white, #FFBB00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+.skillName{
+    font-size: 50px;
+   background: linear-gradient(to top, white, #FFBB00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+.description{
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 18px;
+  border-radius: 10px;
+  border-left: 3px solid #FFBB00;
+  padding: 20px;
+  background-color: #282828;
+  text-align: justify;
+}
+
+.button{
+  border-radius: 30px;
+  border: 1px solid #FFBB00;
+  padding: 8px ;
+  font-size: 20px;
+  width: 130px;
+  margin-top: 20px;
+  background-color: transparent;
+  transition:  background-color .3s ease ;
+  cursor: pointer;
+
+  
+}
+.button a{
+    color: white;
+
+}
+.button:hover{
+   background: linear-gradient(to left, #282828, #ffbb00);
+  color: black;
+}
+.rightContent {
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 12px #FFBB00;
+  border: 2px solid #FFBB00;
+
+  /* Animation */
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* moves up */
+  }
+  100% {
+    transform: translateY(0); /* back down */
+  }
+}
+
+.rightContent img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 800px) {
+  .leftContent{
+    order:2;
+    gap: 0;
+  }
+  .name , .skillName{
+    font-size: 30px;
+  }
+  .description{
+    font-size: 15px;
+  }
+  .rightContent{
+    order: 1;
+  }
+.homeSection
+{
+  justify-content: center;
+ gap: 20px;
+
+}
+}
+
+
+/* Project section */
+.projectSection{
+  max-width: 1300px;
+  width: 95%;
+  margin: auto;
+  min-height: 100vh;
+  padding-bottom: 10px;
+padding-inline: 10px;
+
+}
+.projectSection >  h2{
+  font-size: 60px;
+  color: #FFF;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+}
+.projectSection > h2::after{
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  left: 0;
+  bottom: -5px;
+  background-color: #FFBB00;
+}
+.projectSection p{
+  font-size: 18px;
+  max-width: 800px;
+  color: #FFF;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.cardContainer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+.card{
+  background-color: #282828;
+  border-radius:16px;
+ width: 400px;
+ flex-grow: 1;
+ transition: transform .3s ease ;
+ overflow: hidden;
+ padding: 15px;
+ font-size: 25px;
+ position: relative;
+ border:  1px solid #FFBB00;
+ height: auto;
+
+
+}
+
+
+.card h2{
+  font-weight: 400;
+  margin-block: 5px;
+    text-align: center;
+  color: #FFF;
+  font-size: 23px;
+}
+
+.card button{
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color:#1F1F1F;
+    margin: auto;
+ margin-top: 15px;
+ transition: all .3s ease;
+ cursor: pointer;
+display: block;
+border-radius: 4px;
+
+}
+.card a{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+   display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+
+}
+.card button:hover{
+  background: linear-gradient(to left,#282828,#ffbb00);
+}
+.imgContainer{
+  width: 100%;
+border-radius: 10px;
+overflow: hidden;
+ margin-bottom: 10px;
+}
+.card img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+.card:hover{
+  transform: translateY(-10px);
+}
+.card p{
+  text-align: justify;
+}
